@@ -1,9 +1,14 @@
 package mathutils
 
-import "errors"
+import (
+	"errors"
 
-func Add(a, b float64) float64 {
-	return a + b
+	"github.com/niketa1493/solid-spork/pkg/internal"
+)
+
+func Add(a, b float64) string {
+	result := a + b
+	return internal.PrintResult(result)
 }
 
 func Subtract(a, b float64) float64 {

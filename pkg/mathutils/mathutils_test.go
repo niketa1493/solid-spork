@@ -1,9 +1,11 @@
 package mathutils
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestAdd(t *testing.T) {
-	if Add(2, 3) != 5 {
+	if Add(2, 3) != "The result is: 5.00" {
 		t.Error("Add failed")
 	}
 }
